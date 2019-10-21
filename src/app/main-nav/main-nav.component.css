@@ -19,6 +19,10 @@
   margin-top: 90%;
   height: 80%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d5f10ac14c4c29909bea62d3159c312a5d67b5f
 
 
 /* Toolbar Navigation Style */
@@ -26,6 +30,8 @@
   background-color: rgb(58, 38, 188);
   color: white;
   position: unset;
+  height: 80px;
+  font-size: 25px;
 }
 .mat-toolbar a {
   display: inline-block;

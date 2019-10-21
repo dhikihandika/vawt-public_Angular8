@@ -20,7 +20,12 @@ import { ReportsComponent } from './reports/reports.component';
 import { AboutasComponent } from './aboutas/aboutas.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainServiceService} from './main-service/main-service.service';
+<<<<<<< HEAD
 import { FooterComponent } from './footer/footer.component';
+=======
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component'; 
+>>>>>>> 5d5f10ac14c4c29909bea62d3159c312a5d67b5f
 
 
 

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MainServiceService } from '../main-service/main-service.service'
+<<<<<<< HEAD
        
+=======
+>>>>>>> 5d5f10ac14c4c29909bea62d3159c312a5d67b5f
 
 @Component({
   selector: 'app-dashboard',
@@ -25,4 +28,9 @@ export class DashboardComponent implements OnInit {
   }
  
 
+<<<<<<< HEAD
 }
+=======
+ 
+}
+>>>>>>> 5d5f10ac14c4c29909bea62d3159c312a5d67b5f
