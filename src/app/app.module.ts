@@ -19,6 +19,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { AboutasComponent } from './aboutas/aboutas.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainServiceService} from './main-service/main-service.service';
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component'; 
 
 
 
@@ -29,7 +31,8 @@ import { MainServiceService} from './main-service/main-service.service';
     HomeComponent,
     DashboardComponent,
     ReportsComponent,
-    AboutasComponent
+    AboutasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { MainServiceService} from './main-service/main-service.service';
     MatIconModule,
     MatListModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [MainServiceService],
   bootstrap: [AppComponent]
