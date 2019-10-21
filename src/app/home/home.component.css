@@ -1,0 +1,25 @@
+.slider img {
+    width: 100%;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 70%;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .carousel-caption p {
+    font-size: 20px;
+  }
+  
+  
+  @media screen and (max-width:750px) {
+    .carousel-caption {
+      font-size: 30px;
+    }
+    
+    .carousel-caption p {
+      font-size: 10px;
+    }
+  }

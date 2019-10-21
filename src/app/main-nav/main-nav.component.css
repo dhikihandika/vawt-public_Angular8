@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Sidebar Navigation Style */
+.sidenav-container {
+  height: 100%;
+}
+.sidenav {
+  width: 200px;
+  box-shadow: spx 1 6px rgba(0,0,0.24);
+}
+.mat-nav-list a:hover {
+ background-color: rgb(67, 67, 119);
+ color: white;
+}
+
+
+/* Toolbar Navigation Style */
+.mat-toolbar {
+  background-color: rgb(58, 38, 188);
+  color: white;
+  position: unset;
+}
+.mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.mat-toolbar-home {
+  padding: 0 20px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Responsive design on ipad */
+@media screen and (min-width:750px) {
+  .mat-toolbar a.mat-toolbar-item{
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* Responsive design on mobile phone device */
+@media screen and (max-width:750px) {
+  .mat-toolbar a.mat-toolbar-item{
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--all above is necessary for bootstrap to function in this snippet-->
+
+
+<div class="container wrapper">
+        <div class="row">
+    
+            <!-- Data List Table -->
+            <div class="col-md-12">
+                <div class="inner">
+                    <h3 class="table-title" style="text-align: center; padding-top: 10px"> Report of Vertical Axis Wind Turbine </h3>
+                    <hr>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Time <em>(UTF-8)</em></th>
+                                <th scope="col">Temperature <em>(°C)</em></th>
+                                <th scope="col">Humidity <em>(%)</em></th>
+                                <th scope="col">Barometer <em>(mbar)</em></th>
+                                <th scope="col">Wind Speed <em>(m/s)</em> </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of dataList">
+                                <th scope="row">{{data.id}}</th>
+                                <td>{{data.updatedAt}}</td>
+                                <td>{{data.temperature}}</td>
+                                <td>{{data.humidity}}</td>
+                                <td>{{data.barometer}}</td>
+                                <td>{{data.wind_speed}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

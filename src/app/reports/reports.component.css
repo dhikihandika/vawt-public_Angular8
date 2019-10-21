@@ -1,0 +1,27 @@
+.table-title{
+    font-size: 35px;
+}
+.table{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Only on Ipad */
+@media screen and (min-width:750px),(max-width:1200px){
+    .table{
+        font-size: 14px;
+    }
+    .table-title{
+        font-size: 25px;
+    }
+} 
+
+/* Only in mobile phone */
+@media screen and (max-width:750px){
+    .table{
+        font-size: 6px;
+    }
+    .table-title{
+        font-size: 17px;
+    }
+}
