@@ -33,6 +33,15 @@ export class MainServiceService {
     )
   }
 
+    //Http GET Request last rows data
+    Getdatalast(): Observable<Ireports[]>{
+      return this.http.get<Ireports[]>(this.baseurl+ '/get/vawtdata/last')
+      .pipe(  
+        retry(1),
+        catchError(this.errorHandle)
+      )
+    }
+
   //Error Handle
   errorHandle(error){
     let errorMessage="";

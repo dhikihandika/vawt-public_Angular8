@@ -11,14 +11,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MatCardModule } from '@angular/material/card'; 
 
+import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReportsComponent } from './reports/reports.component';
 import { AboutasComponent } from './aboutas/aboutas.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainServiceService} from './main-service/main-service.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -29,7 +31,8 @@ import { MainServiceService} from './main-service/main-service.service';
     HomeComponent,
     DashboardComponent,
     ReportsComponent,
-    AboutasComponent
+    AboutasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { MainServiceService} from './main-service/main-service.service';
     MatIconModule,
     MatListModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [MainServiceService],
   bootstrap: [AppComponent]

@@ -14,6 +14,11 @@
  background-color: rgb(67, 67, 119);
  color: white;
 }
+.more-link {
+  background-color: rgb(58, 38, 188);
+  margin-top: 90%;
+  height: 80%;
+}
 
 
 /* Toolbar Navigation Style */

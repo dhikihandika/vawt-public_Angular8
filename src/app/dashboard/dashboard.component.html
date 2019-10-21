@@ -1,1 +1,60 @@
-<p>dashboard works!</p>
+<mat-card class="card-1">
+    <mat-card-header>
+        <button class="title">Temperature</button>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="value">
+            <p *ngFor="let data of dataLast">{{data.temperature}}  °C</p>
+        </div>
+    </mat-card-content>
+    <span class="spacer"></span>
+</mat-card>
+
+
+<mat-card class="card-2">
+    <mat-card-header>
+        <button class="title">Humidity</button>
+    </mat-card-header>
+    <span class="spacer"></span>
+        <mat-card-content>
+            <div class="value">
+                <p *ngFor="let data of dataLast">{{data.humidity}}  %</p>
+            </div>
+        </mat-card-content>
+</mat-card>
+
+
+<mat-card class="card-3">
+    <mat-card-header>
+        <button class="title">Barometer</button>
+    </mat-card-header>
+        <mat-card-content>
+            <div class="value">
+                <p *ngFor="let data of dataLast">{{data.barometer}}  mbar</p>
+            </div>
+        </mat-card-content>
+</mat-card>
+
+
+<mat-card class="card-4">
+    <mat-card-header>
+        <button class="title">Wind Direction</button>
+    </mat-card-header>
+        <mat-card-content>
+            <div class="value">
+                <p *ngFor="let data of dataLast">{{data.wind_dir}}  °</p>
+            </div>
+        </mat-card-content>
+</mat-card>
+
+
+<mat-card class="card-5" style="margin-bottom: 10%">
+    <mat-card-header>
+        <button class="title">Wind Speed</button>
+    </mat-card-header>
+        <mat-card-content>
+            <div class="value">
+                <p *ngFor="let data of dataLast">{{data.barometer}}  m/s</p>
+            </div>
+        </mat-card-content>
+</mat-card>
